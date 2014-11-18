@@ -194,23 +194,11 @@ config CPU_FREQ_DEFAULT_GOV_VIRTUOUS
         help
           Use the CPUFreq governor 'virtuous' as default.
 
-config CPU_FREQ_DEFAULT_GOV_DARKSIDE
-        bool "darkside"
-        select CPU_FREQ_GOV_DARKSIDE
-        help
-          Use the CPUFreq governor 'darkside' as default.
-
 config CPU_FREQ_DEFAULT_GOV_LIONHEART
         bool "lionheart"
         select CPU_FREQ_GOV_LIONHEART
         help
         Use the CPUFreq governor 'lionheart' as default.
-        
-config CPU_FREQ_DEFAULT_GOV_PEGASUSQ
-	bool "pegasusq"
-    	select CPU_FREQ_GOV_PEGASUSQ
-    	help
-	Use the CPUFreq governor 'PEGASUSQ' as default.
 	
 config CPU_FREQ_DEFAULT_GOV_WHEATLEY
 	bool "wheatley"
@@ -421,14 +409,6 @@ config CPU_FREQ_GOV_VIRTUOUS
 
           If in doubt, say N.
 
-config CPU_FREQ_GOV_DARKSIDE
-	tristate "'darkside' cpufreq governor"
-	depends on CPU_FREQ
-	help
-	  'darkside' - a "slightly more agressive smart" optimized governor!
-
-          If in doubt, say N.
-
 config CPU_FREQ_GOV_LIONHEART
   	tristate "'lionheart' cpufreq governor"
   	depends on CPU_FREQ
@@ -440,9 +420,6 @@ config CPU_FREQ_GOV_LIONHEART
 config CPU_FREQ_GOV_WHEATLEY
 	tristate "'wheatley' cpufreq governor"
 	depends on CPU_FREQ
-	
-config CPU_FREQ_GOV_PEGASUSQ
-        tristate "'pegasusq' cpufreq policy governor"
 
 menu "x86 CPU frequency scaling drivers"
 depends on X86
