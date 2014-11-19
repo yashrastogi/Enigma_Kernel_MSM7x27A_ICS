@@ -334,4 +334,4 @@ late_initcall(ssm_init);
 module_exit(ssm_exit);
 
 MODULE_LICENSE("GPL v2");
-MODULE_DESCRIPTION("Power management notifications for Super Stamina Mode (Yash)");
+MODULE_DESCRIPTION("Power management notifications for Super Stamina Mode Ported by Yash");

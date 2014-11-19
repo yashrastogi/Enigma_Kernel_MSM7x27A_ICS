@@ -2126,10 +2126,10 @@ config MSM_CACHE_DUMP_ON_PANIC
 	  If unsure, say N
 
 config SONY_SSM
-	bool "Support Super Stamina Mode for kernel 3.0"
+	bool "Support Super Stamina Mode ported by Yash for kernel 3.0"
 	default n
 	help
 	  This enables support for power mode notifications, required by Super
-	  Stamina Mode.
+	  Stamina Mode Ported by Yash at xda.
 	  
 endif

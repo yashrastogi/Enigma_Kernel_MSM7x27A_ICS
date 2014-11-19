@@ -1,3 +1,4 @@
+# Author: Yash98
 # Automatically generated make config: don't edit
 # Linux/arm 3.0.45 Kernel Configuration
 #
@@ -91,7 +92,7 @@ CONFIG_EXPERIMENTAL=y
 CONFIG_BROKEN_ON_SMP=y
 CONFIG_INIT_ENV_ARG_LIMIT=32
 CONFIG_CROSS_COMPILE=""
-CONFIG_LOCALVERSION="-Enigma-8.2+"
+CONFIG_LOCALVERSION="-Enigma-8.4+"
 #CONFIG_LOCALVERSION_AUTO is not set
 CONFIG_HAVE_KERNEL_GZIP=y
 CONFIG_HAVE_KERNEL_LZMA=y
@@ -2891,6 +2892,6 @@ CONFIG_HAS_DMA=y
 CONFIG_NLATTR=y
 # CONFIG_AVERAGE is not set
 #
-# Config Sony Super Stamina Mode supported by SatrioDwiPrabowo
+# Config Sony Super Stamina Mode supported by Yash
 #
 CONFIG_SONY_SSM=y

@@ -863,7 +863,7 @@ static void __exit cpufreq_smartass_exit(void)
 
 module_exit(cpufreq_smartass_exit);
 
-MODULE_AUTHOR ("Erasmux, moded by H3ROS & C3C0");
+MODULE_AUTHOR ("Erasmux, moded by H3ROS & C3C0, ported for Xperia Miro/J/Tipo by Yash");
 MODULE_DESCRIPTION ("'cpufreq_smartassH3' - A smart cpufreq governor");
 MODULE_LICENSE ("GPL");
 

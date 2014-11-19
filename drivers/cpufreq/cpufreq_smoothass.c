@@ -622,6 +622,6 @@ destroy_workqueue(down_wq);
 
 module_exit(cpufreq_smoothass_exit);
 
-MODULE_AUTHOR ("Erasmux, modified by LeeDrOiD");
+MODULE_AUTHOR ("Erasmux, modified by LeeDrOiD , ported for Xperia Miro/J/Tipo by Yash");
 MODULE_DESCRIPTION ("'cpufreq_smoothass' - A smart cpufreq governor");
 MODULE_LICENSE ("GPL");
