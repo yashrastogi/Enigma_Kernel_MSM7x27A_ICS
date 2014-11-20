@@ -1,5 +1,4 @@
 ls
-find ./ -name '*~' | xargs rm
 export ARCH=arm CROSS_COMPILE=/usr/bin/arm-linux-gnueabi-
 make clean && make mrproper && make distclean
 make Enigma_TAP_defconfig
