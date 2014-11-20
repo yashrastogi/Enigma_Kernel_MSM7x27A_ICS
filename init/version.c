@@ -39,10 +39,10 @@ EXPORT_SYMBOL_GPL(init_uts_ns);
 
 /* FIXED STRINGS! Don't touch! */
 const char linux_banner[] =
-	"Linux version " UTS_RELEASE " (" "Yash" "@"
+	"Linux version " UTS_RELEASE " (" "L33T Yash" "@"
 	"Legend Mech" ") (" LINUX_COMPILER ") " UTS_VERSION "\n";
 
 const char linux_proc_banner[] =
 	"%s version %s"
-	" (" "Yash" "@" "Legend Mech" ")"
+	" (" "L33T Yash" "@" "Legend Mech" ")"
 	" (" LINUX_COMPILER ") %s\n";
