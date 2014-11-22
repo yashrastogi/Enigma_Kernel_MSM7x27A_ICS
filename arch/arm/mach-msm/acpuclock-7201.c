@@ -181,26 +181,32 @@ static struct clkctl_acpu_speed pll0_960_pll1_196_pll2_800_pll4_0[] = {
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0, 0, 0, 0}, {0, 0, 0, 0} }
 };
 
-/* 7627a PLL2 @ 1200MHz with GSM capable modem - Enigma Overclock Miro/Tipo */
+/* 7627a PLL2 @ 1200MHz with GSM capable modem - Enigma Overclock Miro/Tipo
+   General Guidelines
+   Clock_delta >= 400MHz can halt CPU
+   CPU = PLL / 2^(PLL div)
+   AHB clock = CPU / 2^(AHB div). Warning ! AHB needs to be slowly synchronized with CPU using few steps, it is a good idea to
+   hide those steps	
+   vdd can be set from 1 to 7. Max voltage = 7. Only 3 bit numbers, can't overvoltage CPU 
+*/
+/* | show/hide | reported speed | used PLL | used PLL num | PLL div | AHB clock | AHB div | Vdd | AXI bus clock | */
 static struct clkctl_acpu_speed pll0_960_pll1_245_pll2_1200_pll4_800[] = {
 	{ 0, 19200, ACPU_PLL_TCXO, 0, 0, 2400, 3, 0, 30720 },
-	{ 0, 61440, ACPU_PLL_1, 1, 3, 7680, 3, 1, 61440 },
-	{ 1, 122880, ACPU_PLL_1, 1, 1, 15360, 3, 2, 61440 },
-	{ 1, 249600, ACPU_PLL_1, 1, 0, 30720, 3, 3, 61440 },
+	{ 0, 61440, ACPU_PLL_1, 1, 3,  7680, 3, 1,  61440 },
+	{ 1, 122880, ACPU_PLL_1, 1, 1, 15360, 3, 2,  61440 },
+	{ 1, 245760, ACPU_PLL_1, 1, 0, 30720, 3, 3,  61440 },
 	{ 0, 300000, ACPU_PLL_2, 2, 3, 37500, 3, 4, 150000 },
 	{ 1, 320000, ACPU_PLL_0, 4, 2, 40000, 3, 4, 122880 },
 	{ 0, 400000, ACPU_PLL_4, 6, 1, 50000, 3, 4, 122880 },
 	{ 1, 480000, ACPU_PLL_0, 4, 1, 60000, 3, 5, 122880 },
 	{ 1, 600000, ACPU_PLL_2, 2, 1, 75000, 3, 6, 200000 },
 	{ 1, 800000, ACPU_PLL_4, 6, 0, 100000, 3, 7, 200000 },
-	{ 1, 825000, ACPU_PLL_2, 2, 0, 103125, 3, 7, 200000 },
-	{ 1, 850000, ACPU_PLL_2, 2, 0, 106250, 3, 7, 200000 },
-	{ 1, 875000, ACPU_PLL_2, 2, 0, 109375, 3, 7, 200000 },
-	{ 1, 900000, ACPU_PLL_2, 2, 0, 112500, 3, 7, 200000 },
-	{ 1, 925000, ACPU_PLL_2, 2, 0, 115625, 3, 7, 200000 },
-	{ 1, 950000, ACPU_PLL_2, 2, 0, 118750, 3, 7, 200000 },
-	{ 1, 975000, ACPU_PLL_2, 2, 0, 121875, 3, 7, 200000 },
-	{ 1, 1000000, ACPU_PLL_2, 2, 0, 125000, 3, 7, 200000},
+	{ 0, 870000, ACPU_PLL_4, 6, 0, 110000, 3, 7, 200000 },
+	{ 1, 960000, ACPU_PLL_0, 4, 0, 120000, 3, 7, 200000 }, 
+	{ 0, 1050000, ACPU_PLL_2, 2, 0, 131250, 3, 7, 200000}, 
+	{ 0, 1100000, ACPU_PLL_2, 2, 0, 137500, 3, 7, 200000}, 
+	{ 0, 1150000, ACPU_PLL_2, 2, 0, 143750, 3, 7, 200000},
+	{ 1, 1209600, ACPU_PLL_2, 2, 0, 151200, 3, 7, 200000}, 
 	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, {0, 0, 0, 0}, {0, 0, 0, 0} }
 };
 
