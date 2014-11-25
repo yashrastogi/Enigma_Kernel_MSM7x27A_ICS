@@ -203,7 +203,7 @@ static struct clkctl_acpu_speed pll0_960_pll1_245_pll2_1200_pll4_800[] = {
 	{ 1, 800000, ACPU_PLL_4, 6, 0, 100000, 3, 7, 200000 },
 /*      Real overclock frequencies which yield excellent benchmarks but zero stability:
 	{ 1, 960000, ACPU_PLL_0, 4, 0, 120000, 3, 7, 200000 },     
-        { 1, 1200000, ACPU_PLL_2, 2, 0, 150000, 3, 7, 200000 },
+       { 1, 1200000, ACPU_PLL_2, 2, 0, 150000, 3, 7, 200000 },
 
         Adding cosmetic overclock as done by other kernels.               */
 	{ 1, 900000, ACPU_PLL_4, 6, 0, 110000, 3, 7, 200000 }, 
