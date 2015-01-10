@@ -1,4 +1,4 @@
-# Vengeance Kernel
+# Enigma Kernel
 
 VERSION = 3
 PATCHLEVEL = 0

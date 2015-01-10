@@ -1,0 +1,5 @@
+ARCH=arm
+CROSS_COMPILE=/home/yash/Desktop/arm-linux-gnueabi-linaro_4.9.3-2014.12/bin/arm-linux-gnueabi-
+
+
+# Set your cross compiler and any other variables here

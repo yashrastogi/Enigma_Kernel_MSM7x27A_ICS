@@ -33,7 +33,7 @@
 #include "cyttsp_core.h"
 #include <linux/slab.h>
 
-//#define DBG(x)
+#define DBG(x)
 
 struct cyttsp_i2c {
 	struct cyttsp_bus_ops ops;
